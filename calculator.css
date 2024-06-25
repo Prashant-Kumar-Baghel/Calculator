@@ -1,0 +1,144 @@
+/* .wrapper{
+    background-color: #d8d9db;
+    width: 400px;
+}
+.line1{
+    background-color: black;
+    width: 80%;
+    height: 2.5rem;
+    color: white;
+    margin: auto;
+  
+}
+.line2{
+    display: flex;
+    justify-content: center;
+}
+.line{
+    border: 2px solid black;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    text-align: center;
+    align-self: center;
+    border-left: none;
+}
+.special{
+    border: 2px solid black;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    text-align: center;
+    flex-grow: 0.7;
+} */
+html{
+    box-sizing: border-box;
+}
+*,*:before,*after{
+    box-sizing: inherit;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+/* .screen{
+    background-color: black;
+    width: 10.4rem;
+    margin-left: 7rem;
+    padding-bottom: 1.5rem;
+    color: white;
+    text-align: end;
+    padding: 0.5rem 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+.wrapper{
+    width: 400px;
+    background-color:#d8d9db ;
+    border: 3px solid red;
+    
+}
+.calc-buttons{
+    padding-left: 7rem;
+} */
+/* .calc-button{ */
+    /* button is inline but we have to do some changes hence we make it to inline-block. */
+    /* display: inline-block;
+    border-radius: 0;
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 0;
+} 
+.double{
+    width: 5.1rem;
+}
+.triple{
+    width: 7.6rem;
+}
+.arrow{
+    width:2.57rem;
+}
+.color{
+    background-color: rgb(255, 165, 0);
+} */
+.wrapper{
+    background-color: black;
+    width: 400px;
+    border: 3px solid red;
+}
+.calc-button-row{
+    /* we do justify-content: space-between; to make that space the border between buttons. */
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 0.5%;
+}
+ .screen{
+    color: white;
+    text-align: end;
+    padding: 20px 5px;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .calc-button{
+
+    background-color: #d8d9db;
+    color: black;
+    border: none;
+    font-style: 40px;
+    height: 100px;
+    flex-basis: 24.5%;
+    font-size: 40px;
+    font-weight: 500;
+    cursor: pointer;
+} 
+.calc-button:hover{
+    background-color: #ebebeb;
+}
+.calc-button:active{
+    background-color: #bbbcbe;
+}
+.double{
+    flex-basis: 49.7%;
+}
+.triple{
+    flex-basis: 74.8%;
+}
+/* .color{
+    background-color: orange;
+    color: white;
+} */
+
+/* we have this alter way also and herce we want the background color as orange of that button which is last button hence we ue :last-child. and we also have :first-child for first child */
+.calc-button:last-child{
+    background-color: orange;
+    color: white; 
+}
+.calc-button:last-child:hover{
+    background-color: #dfb07e;
+}
