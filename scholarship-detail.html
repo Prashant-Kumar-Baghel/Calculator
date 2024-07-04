@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="style.css" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
     <title>Document</title>
 </head>
 
@@ -87,6 +88,7 @@
                                 <b>6</b>
                                 <span>Days Left</span>
                             </div>
+                          <div class="flex">
                             <div class="sec-3-box-1-start-date">
                                 <span class="sec-3-box-1-date">Start date:</span>
                                 <span class="sec-3-box-1-date-value">18/01/2024</span>
@@ -95,6 +97,7 @@
                                 <span class="sec-3-box-1-date-span">End date:</span>
                                 <span class="sec-3-box-1-date-value">05/02/2024</span>
                             </div>
+                          </div>
                         </div>
                     </div>
                     <div class="sec-3-badge-container">
@@ -123,14 +126,16 @@
                                
                                 <span class="sec-3-box-1-date-open">Open</span>
                                 <span class="sec-3-box-1-date-accepting">Accepting Applications</span>
-                            </div>
-                            <div class="sec-3-box-1-start-date">
-                                <span class="sec-3-box-1-date">Start date:</span>
-                                <span class="sec-3-box-1-date-value">18/01/2024</span>
-                            </div>
-                            <div class="sec-3-box-1-end-date">
-                                <span class="sec-3-box-1-date-span">End date:</span>
-                                <span class="sec-3-box-1-date-value">--/--/--</span>
+                            </div >
+                            <div class="flex">
+                                <div class="sec-3-box-1-start-date">
+                                    <span class="sec-3-box-1-date">Start date:</span>
+                                    <span class="sec-3-box-1-date-value">18/01/2024</span>
+                                </div>
+                                <div class="sec-3-box-1-end-date">
+                                    <span class="sec-3-box-1-date-span">End date:</span>
+                                    <span class="sec-3-box-1-date-value">--/--/--</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -159,13 +164,15 @@
                                 <span class="sec-3-box-1-date-not-open">Closed</span>
                                 <span class="sec-3-box-1-date-not-accepting">Not Accepting Applications</span>
                             </div>
-                            <div class="sec-3-box-1-start-date">
-                                <span class="sec-3-box-1-date">Start date:</span>
-                                <span class="sec-3-box-1-date-value">18/01/2024</span>
-                            </div>
-                            <div class="sec-3-box-1-end-date">
-                                <span class="sec-3-box-1-date-span">End date:</span>
-                                <span class="sec-3-box-1-date-value">05/02/2014</span>
+                            <div class="flex">
+                                <div class="sec-3-box-1-start-date">
+                                    <span class="sec-3-box-1-date">Start date:</span>
+                                    <span class="sec-3-box-1-date-value">18/01/2024</span>
+                                </div>
+                                <div class="sec-3-box-1-end-date">
+                                    <span class="sec-3-box-1-date-span">End date:</span>
+                                    <span class="sec-3-box-1-date-value">05/02/2014</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -417,7 +424,7 @@
                         </div>
 
                     </div>
-                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-next"><img class="swiper-button-next-img" src="./images//Vector (9).png" alt=""></div>
                     <div class="swiper-button-prev"></div>
                 </div>
 
@@ -470,7 +477,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="text/javascript">
         var swiper = new Swiper(".card_slider", {
-            spaceBetween: 30,
+            spaceBetween: 24,
             //    for loop
             loop: true,
             //    speed

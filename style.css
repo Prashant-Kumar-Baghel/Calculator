@@ -118,6 +118,7 @@
   font-weight:600;
   font-size:12px;
   color: var(--primary-text-color);
+  margin-bottom:0px !important;
   
 }
 
@@ -199,6 +200,8 @@
   border-radius :12px;
   border:1px solid #DDDDDD;
   padding:8px 16px 8px 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  outline:none;
 }
 .sec-3-dropdown-item-option{
   font-family: "Roboto", sans-serif;
@@ -213,6 +216,7 @@
   font-weight:400;
   font-size:16px;
   color:#303030;
+  line-height:30px;
 }
 .sec3-cards{
   display:flex;
@@ -222,19 +226,23 @@
 .sec-3-card{
   width:349px;
   border-radius:12px;
-  border:1px solid var(--primary-text-color);
+  border:1px solid #DDDDDD;
   padding:40px 24px 40px 24px;
   color:black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position:relative;
 }
 .sec-3-top-card-1{
   width:68px;
   height:21px;
   margin-right:6px;
+  color: #595959;
 }
 .sec-3-top-card-3{
   width:216px;
   height:21px;
   margin-left:6px;
+  color: #595959;
 }
 .sec-3-card-h3{
   margin-top:16px;
@@ -243,6 +251,7 @@
   font-size:24px;
   color:#303030  ;
   margin-bottom:16px;
+  
 }
 .sec-3-card-p{
   font-family: "Roboto", sans-serif;
@@ -261,6 +270,8 @@
   color:var(--primary-text-color);
   text-decoration:underline;
   cursor:pointer;
+  position: absolute;
+    bottom: 40px;
 }
 .conclusion{
   margin-block:32px;
@@ -278,6 +289,7 @@
   font-size:16px;
   color:#303030;
   line-height:30px;
+  text-align:justify;
 }
 select{
   appearance: none;
@@ -289,6 +301,9 @@ select{
   transform: translateY(-50%);
   display: flex;
   align-items: center;
+  width:34px;
+  border-left:2px solid #DDDDDD;
+  padding:8px 6px 8px 16px;
 }
 
 .formfield{
@@ -441,6 +456,46 @@ select{
   display: none;
 }
 
+.card-flag{
+  width:125px;
+  height:37px;
+  border-radius: 0px 12px 0px 8px;
+  padding:8px;
+  background-color:#C0E0CB;
+  position:absolute;
+  right:0;
+  top:0;
+  display: flex;
+  align-items: center;
+}
+.card-flag p{
+  font-family: "Roboto", sans-serif;
+  font-weight:600;
+  font-size:14px;
+  color:#595959;
+}
+.swiper-button-prev:after{
+  display:none !important;
+}
+.swiper-button-next:after{
+  display:none !important;
+}
+.swiper-button-next{
+  width:56px !important;
+  height:56px !important;
+  border-radius:100%;
+  padding:16px 24px 16px 24px;
+  border:2px solid #A0499A;
+  background:white;
+  position: absolute !important;
+    right: 31px !important;
+}
+.swiper-button-next-img{
+  width: 7.4px !important;
+    height: 12px !important;
+
+}
+
 /* Transition for desktop */
 @media (min-width: 768px) {
   .aside {
@@ -548,6 +603,7 @@ select{
   font-size: 16px;
   color: #303030;
   line-height: 24px;
+  text-align:justify;
 }
 
 .side-drawer-a {
@@ -658,6 +714,7 @@ select{
   font-family: "Roboto", sans-serif;
   font-weight:400;
   line-height:30px;
+  text-align:justify;
 }
 .sec-3-boxs h2{
   font-family: "Lora", serif;
@@ -673,7 +730,7 @@ select{
   border-radius:12px;
   height:158px;
   display:flex;
-  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .sec-3-box-1-days{
   border:1px 0px 1px 1px;
@@ -765,7 +822,6 @@ select{
   padding:8px;
   border-radius:16px;
   width:481px;
- 
 }
 .sec-3-container {
   gap:96px;
@@ -979,10 +1035,12 @@ select{
   border:1px solid #DDDDDD;
   border-radius:12px;
   padding:8px;
+  display: flex;
+    align-items: center;
+    position:relative !important;
  }
  .img_box img{
-  width:157.85px;
-  height:160px;
+  width:100%;
  }
  /* .swiper-data{
   height:96px;
@@ -1014,6 +1072,7 @@ select{
  color:#303030;
  margin-block:32px;
  line-height:30px;
+ text-align:justify;
  }
  .sec-conclution h3{
   font-family: "Lora", serif;
@@ -1030,6 +1089,7 @@ select{
  color:#303030;
  margin-bottom:32px;
  line-height:30px;
+ text-align:justify;
  }
  @media(max-width:576px){
   .img-header{
@@ -1078,6 +1138,7 @@ select{
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  text-align: justify;
 }
 .sec-3-h1 {
 margin-bottom:16px;
@@ -1092,6 +1153,8 @@ line-height:21px;
 .sec-3-card {
   padding:32px 20px 32px 20px;
   width:100%;
+  position:relative;
+  height: 247px;
 }
 .sec-3-card-h3 {
   font-size:18px;
@@ -1154,6 +1217,7 @@ line-height:21px;
 .sec-3-box-1 {
   width: 100%;
   height:118px;
+  /* justify-content: space-between; */
 }
 .sec-3-boxs h2{
   font-size:20px;
@@ -1165,21 +1229,25 @@ line-height:21px;
   justify-content:center;
 }
 .sec-3-box-1-days b{
-  font-size:14px;
+  font-size:24px;
   width:14px;
   height:28px;
+  font-weight: bold;
 }
 .sec-3-box-1-days span{
-  font-size:14px;
+  font-size: 14px;
+  width: 61px;
   
 }
 .sec-3-box-1-start-date{
   margin-block: 39.5px;
-  padding-inline: 12px;
+  padding-left: 12px;
+  padding-right: 14.5px;
 }
 .sec-3-box-1-end-date{
   margin-block: 39.5px;
-  padding-inline: 12px;
+  padding-left: 14.5px;
+  padding-right: 12px;
 }
 .sec-3-badge-container h2{
   font-size:20px;
@@ -1194,11 +1262,12 @@ line-height:21px;
     height: 118px;
 }
 .sec-3-badge-container-reward img{
-  width: 120px;
   height: 102px;
 }
 .sec-3-badge-box-1{
   margin-left:16px;
+  height: 100%;
+    padding: 24px 16px 24px 16px;
 }
 .sec-3-badge-box-1-schol {
   font-size:11px;
@@ -1372,5 +1441,17 @@ line-height:21px;
 .accordion-body li{
   font-size:14px;
 }
+.card-flag {
+  height: 26px;
+  padding: 4px 8px 4px 8px;
 }
+.card-flag p{
+  font-size:12px;
+}
+
+.sec-3-top-card-1 , .sec-3-top-card-2 , .sec-3-top-card-3 {
+  font-size:12px;
+}
+}
+
  
